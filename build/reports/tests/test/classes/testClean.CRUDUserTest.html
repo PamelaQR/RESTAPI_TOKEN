@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - CRUDUserTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>CRUDUserTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/testClean.html">testClean</a> &gt; CRUDUserTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">13.225s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">verifyCreateUser()</td>
+<td class="success">7.052s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">verifyGetUser()</td>
+<td class="success">2.347s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">verifyUpdateUser()</td>
+<td class="success">3.826s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Request method:	GET
+Request URI:	https://todo.ly/api/authentication/token.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=Basic cGFtZWxhMDFAZ21haWwuY29tOjEyMzQ1Njc4OQ==
+				Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=jk33yqeoitozd2grqwpm2gjt; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 13 Aug 2021 01:35:35 GMT
+Content-Length: 126
+
+{
+    &quot;TokenString&quot;: &quot;d13d33a0523442e38db0c53e377b52a0&quot;,
+    &quot;UserEmail&quot;: &quot;pamela01@gmail.com&quot;,
+    &quot;ExpirationTime&quot;: &quot;/Date(1628836536413)/&quot;
+}
+*****************************************
+ConfigEnv.token: d13d33a0523442e38db0c53e377b52a0
+*****************************************
+-----------------------------
+ConfigEnv.host: https://todo.ly
+ConfigEnv.user: grupo5@gmail.com
+ConfigEnv.password: 123456789
+-----------------------------
+Request method:	POST
+Request URI:	https://todo.ly/api/user.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Token=d13d33a0523442e38db0c53e377b52a0
+				Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{&quot;Email&quot;:&quot;grupo5@gmail.com&quot;,&quot;FullName&quot;:&quot;Grupo5&quot;,&quot;Password&quot;:&quot;123456789&quot;}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=tz13uchcxfeuuvs1pdiizkig; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 13 Aug 2021 01:35:38 GMT
+Content-Length: 287
+
+{
+    &quot;Id&quot;: 690565,
+    &quot;Email&quot;: &quot;grupo5@gmail.com&quot;,
+    &quot;Password&quot;: null,
+    &quot;FullName&quot;: &quot;Grupo5&quot;,
+    &quot;TimeZone&quot;: 0,
+    &quot;IsProUser&quot;: false,
+    &quot;DefaultProjectId&quot;: 3946035,
+    &quot;AddItemMoreExpanded&quot;: false,
+    &quot;EditDueDateMoreExpanded&quot;: false,
+    &quot;ListSortType&quot;: 0,
+    &quot;FirstDayOfWeek&quot;: 0,
+    &quot;NewTaskDueDate&quot;: -1,
+    &quot;TimeZoneId&quot;: &quot;Pacific Standard Time&quot;
+}
+Request method:	GET
+Request URI:	https://todo.ly/api/authentication/token.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=Basic Z3J1cG81QGdtYWlsLmNvbToxMjM0NTY3ODk=
+				Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=plt1act3urv4hdcbbe3qjbif; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 13 Aug 2021 01:35:39 GMT
+Content-Length: 124
+
+{
+    &quot;TokenString&quot;: &quot;d07c301ad8664056b723b20590f8d8e0&quot;,
+    &quot;UserEmail&quot;: &quot;grupo5@gmail.com&quot;,
+    &quot;ExpirationTime&quot;: &quot;/Date(1628836540407)/&quot;
+}
+*****************************************
+ConfigEnv.token: d07c301ad8664056b723b20590f8d8e0
+*****************************************
+-----------------------------
+ConfigEnv.host: https://todo.ly
+ConfigEnv.user: grupo5@gmail.com
+ConfigEnv.password: 123456789
+-----------------------------
+Request method:	GET
+Request URI:	https://todo.ly/api/user.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Token=d07c301ad8664056b723b20590f8d8e0
+				Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=0zgvvjlgihqvwjp3ha2mr225; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 13 Aug 2021 01:35:41 GMT
+Content-Length: 287
+
+{
+    &quot;Id&quot;: 690565,
+    &quot;Email&quot;: &quot;grupo5@gmail.com&quot;,
+    &quot;Password&quot;: null,
+    &quot;FullName&quot;: &quot;Grupo5&quot;,
+    &quot;TimeZone&quot;: 0,
+    &quot;IsProUser&quot;: false,
+    &quot;DefaultProjectId&quot;: 3946035,
+    &quot;AddItemMoreExpanded&quot;: false,
+    &quot;EditDueDateMoreExpanded&quot;: false,
+    &quot;ListSortType&quot;: 0,
+    &quot;FirstDayOfWeek&quot;: 0,
+    &quot;NewTaskDueDate&quot;: -1,
+    &quot;TimeZoneId&quot;: &quot;Pacific Standard Time&quot;
+}
+Request method:	PUT
+Request URI:	https://todo.ly/api/user/690565.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Token=d07c301ad8664056b723b20590f8d8e0
+				Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{&quot;FullName&quot;:&quot;UPDATEGrupo4&quot;}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=1zecbtds5eg0vgkjaivmxffd; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 13 Aug 2021 01:35:42 GMT
+Content-Length: 293
+
+{
+    &quot;Id&quot;: 690565,
+    &quot;Email&quot;: &quot;grupo5@gmail.com&quot;,
+    &quot;Password&quot;: null,
+    &quot;FullName&quot;: &quot;UPDATEGrupo4&quot;,
+    &quot;TimeZone&quot;: 0,
+    &quot;IsProUser&quot;: false,
+    &quot;DefaultProjectId&quot;: 3946035,
+    &quot;AddItemMoreExpanded&quot;: false,
+    &quot;EditDueDateMoreExpanded&quot;: false,
+    &quot;ListSortType&quot;: 0,
+    &quot;FirstDayOfWeek&quot;: 0,
+    &quot;NewTaskDueDate&quot;: -1,
+    &quot;TimeZoneId&quot;: &quot;Pacific Standard Time&quot;
+}
+Request method:	GET
+Request URI:	https://todo.ly/api/authentication/token.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=Basic Z3J1cG81QGdtYWlsLmNvbToxMjM0NTY3ODk=
+				Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=cbdovftikzwsdxw1e4mjaknk; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 13 Aug 2021 01:35:43 GMT
+Content-Length: 124
+
+{
+    &quot;TokenString&quot;: &quot;a09f4431645348e3aee9a668077524d6&quot;,
+    &quot;UserEmail&quot;: &quot;grupo5@gmail.com&quot;,
+    &quot;ExpirationTime&quot;: &quot;/Date(1628836544167)/&quot;
+}
+*****************************************
+ConfigEnv.token: a09f4431645348e3aee9a668077524d6
+*****************************************
+-----------------------------
+ConfigEnv.host: https://todo.ly
+ConfigEnv.user: grupo5@gmail.com
+ConfigEnv.password: 123456789
+-----------------------------
+Request method:	GET
+Request URI:	https://todo.ly/api/user.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Token=a09f4431645348e3aee9a668077524d6
+				Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=r4ayyessxaxcxnuzzgzoqbyy; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 13 Aug 2021 01:35:45 GMT
+Content-Length: 293
+
+{
+    &quot;Id&quot;: 690565,
+    &quot;Email&quot;: &quot;grupo5@gmail.com&quot;,
+    &quot;Password&quot;: null,
+    &quot;FullName&quot;: &quot;UPDATEGrupo4&quot;,
+    &quot;TimeZone&quot;: 0,
+    &quot;IsProUser&quot;: false,
+    &quot;DefaultProjectId&quot;: 3946035,
+    &quot;AddItemMoreExpanded&quot;: false,
+    &quot;EditDueDateMoreExpanded&quot;: false,
+    &quot;ListSortType&quot;: 0,
+    &quot;FirstDayOfWeek&quot;: 0,
+    &quot;NewTaskDueDate&quot;: -1,
+    &quot;TimeZoneId&quot;: &quot;Pacific Standard Time&quot;
+}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.8</a> at 12 ago. de 2021 21:35:49</p>
+</div>
+</div>
+</body>
+</html>

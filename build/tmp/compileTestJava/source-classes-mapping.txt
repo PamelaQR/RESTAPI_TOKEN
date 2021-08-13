@@ -1,0 +1,28 @@
+utils/GetToken.java
+ utils.GetToken
+factoryRequest/RequestGET.java
+ factoryRequest.RequestGET
+utils/GetProperties.java
+ utils.GetProperties
+factoryRequest/RequestDELETE.java
+ factoryRequest.RequestDELETE
+utils/ConfigEnv.java
+ utils.ConfigEnv
+factoryRequest/RequestInformation.java
+ factoryRequest.RequestInformation
+utils/ConfigAPI.java
+ utils.ConfigAPI
+factoryRequest/RequestPUT.java
+ factoryRequest.RequestPUT
+testClean/CRUDProjectTest.java
+ testClean.CRUDProjectTest
+factoryRequest/FactoryRequest.java
+ factoryRequest.FactoryRequest
+factoryRequest/IRequest.java
+ factoryRequest.IRequest
+factoryRequest/RequestGETBasic.java
+ factoryRequest.RequestGETBasic
+factoryRequest/RequestPOST.java
+ factoryRequest.RequestPOST
+testClean/CRUDUserTest.java
+ testClean.CRUDUserTest
